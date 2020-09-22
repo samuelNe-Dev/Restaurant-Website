@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samis Burger</title>
+    <title>BurgerDream</title>
 
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
@@ -11,40 +11,60 @@
 <body>
     <header>
         <div class="top-nav">
-            <ul>
-                <a href="#" style="font-weight: bold;"><li>BurgerDream</li></a>
-                <a href="#menu"><li>Menu</li></a>
-                <a href="#about"><li>About us</li></a>
-                <a href="#contact"><li>Contact</li></a>
-            </ul>
-        </div>
-
-        <div class="top">
-
+            <div class="top-nav-left">
+                <a href="#">BurgerDream</a>
+            </div>
+            
+            <div class="top-nav-right">
+                <a href="#contact">Contact</a> 
+                <a href="#menu">Menu</a> 
+                <a href="#about">About us</a>  
+            </div>
         </div>
     </header>
 
     <div class="container">
-        <div class="menu" id="menu">
-            <h1>Our Menu</h1>
-            <p><a href="test.pdf">Click here</a> to download the menu.</p>
-        </div>
-    </div>
-
-    <div class="container">
         <div class="about" id="about">
-            <h1>Our Story</h1>
-            <h6>Real love for burger</h6>
-            <p>Was it fate that Sami invited his friends to a burger barbecue in the park 
+            <div class="section-heading">
+                <h1>Our <span>S</span>tory</h1>
+                <h6>Real love for burger</h6>
+            </div>
+            <p>Was it fate that Samuel invited his friends to a burger barbecue in the park 
             on that first warm day of the year and he had the brilliant idea to make more 
             out of it than just a wonderful evening? And now you are sitting in a park in 
             the middle of a restaurant?</p>
         </div>
     </div>
 
+    <div class="section-between" id="before-menu"></div>
+
+    <div class="container">
+        <div class="menu" id="menu">
+            <div class="section-heading">
+                <h1>Our <span>M</span>enu</h1>
+            </div>
+            <p><a href="test.pdf">Click here</a> to download the menu.</p>
+        </div>
+    </div>
+
+    <div class="section-between" id="before-contact"></div>
+
     <div class="container">
         <div class="contact" id="contact">
-            <h1>Contact us</h1>
+            <div class="section-heading">
+                <h1>Contact <span>U</span>s</h1>
+            </div>
+            <form action="mailto:negash.samuel@yahoo.de" method="get" enctype="text/plain">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name..."
+                 required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email..."
+                  required><br>
+                <label for="subject">Subject:</label><br>
+                <textarea name="subject" id="subject" rows="10" cols="10"></textarea><br>
+                <input type="submit" value="Submit" id="submit-button">
+              </form>
         </div>
     </div>
 

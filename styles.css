@@ -2,20 +2,49 @@
 * {
     margin: 0;
     padding: 0;
-} 
+}
+
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Manrope', sans-serif;
 }
 h1{
     margin-top: 0px;
+    margin-bottom: 20px;;
 }
 
+h6{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+span{
+    color: #E68950;
+}
+
+p{
+    font-size: 20px;
+}
 /*Start reusable*/
 .container{
     margin-top: 10rem;
     margin-left: 20%;
     margin-right: 20%;
 }
+
+.section-heading h1{
+    font-size: 70px;
+}
+
+.section-heading h6{
+    font-size: 17px;
+}
+.section-heading{
+    margin-bottom: 20px;
+}
+
 /*End reusable*/
 
 /*Start header*/
@@ -31,27 +60,31 @@ header{
 }
 
 .top-nav{
-    background-color: rgb(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0, 0.45);
 }
 
-.top-nav ul{
-    display: inline-block;
-    padding-top: 2.5vh;
-    padding-bottom: 2.5vh;
-    padding-left: auto;
-    padding-right: auto; 
+.top-nav-left a{
+    float: left;
+    font-weight: 650;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
-.top-nav li{
-    padding-left: 3rem;
-    
-    display: inline;
-    font-size: 1.3rem;
+.top-nav-right a{
+    float: right;
+    font-weight: 550;
+    font-size: 18px;
+    letter-spacing: 3px;
 }
 
 .top-nav a{
     text-decoration: none;
     color:#E68950;
+    padding:3rem;
+    display: inline-block;
 }
 
 .top-nav a:hover{
@@ -60,7 +93,29 @@ header{
 }
 /*End header*/
 
+/*Start about*/
+
+.about{
+    text-align: center;
+}
+
+
+/*End about*/
+
+#before-menu{
+    background-image: url("/images/burger-serving.jpg");
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10rem;
+}
 /*Start menu*/
+.menu{
+    text-align: center;
+}
+
 .menu a{
     text-decoration: none;
     color:#E68950;
@@ -71,3 +126,58 @@ header{
     transition: color 0.6s;
 }
 /*End menu*/
+#before-contact{
+    background-image: url("/images/burger-serving2.jpg");
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10rem;
+}
+/*Start contact*/
+.contact h1, input, select, textarea{
+    text-align: center;
+}
+input,
+select,
+textarea{
+    width:50%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: solid;
+    border-width: 0.5px;
+    outline-color: #E68950;
+}
+label{
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+input,textarea{
+    border-radius: 0px;
+}
+
+#submit-button{
+    position: relative;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+form{
+    text-align: center;
+}
+/*End contact*/
+
+/*Start footer*/
+
+footer{
+    background-color: #E68950;
+    width: 100%;
+    height: 15vh;
+    margin-top: 10rem;
+}
+
+/*End footer*/
