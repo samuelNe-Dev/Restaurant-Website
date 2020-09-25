@@ -56,7 +56,6 @@ p{
     color: #E68950;
 }
 
-
 .menu-toggler{
     position: fixed;
     top: 3rem;
@@ -186,12 +185,12 @@ header{
     background-size: cover;
     margin-top: 10rem;
     transform: scale(1);
-    transition: 0.5s;
+    transition: 0.6s;
 }
 
 #before-menu:hover{
     transform: scale(1.1);
-    transition: 0.5s;
+    transition: 0.6s;
 }
 /*Start menu*/
 .menu{
@@ -218,12 +217,12 @@ header{
     background-size: cover;
     margin-top: 10rem;
     transform: scale(1);
-    transition: 0.5s;
+    transition: 0.6s;
 }
 
 #before-contact:hover{
     transform: scale(1.1);
-    transition: 0.5s;
+    transition: 0.6s;
 }
 
 .gallery{
@@ -281,7 +280,7 @@ input,textarea{
     font-size: 20px;
     margin-top: 20px;
     cursor: pointer;
-    transition: all 2s;
+    transition: all 0.6s;
     color: white;
 }
 
@@ -311,6 +310,7 @@ footer{
     margin-right: 20px;
     float: right;
 }
+
 .social-media a{
     font-size: 50px;
     text-decoration: none;
