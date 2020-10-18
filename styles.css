@@ -177,7 +177,7 @@ header{
 /*End about*/
 
 #before-menu{
-    background-image: url("/images/burger-serving.jpg");
+    background-image: url("images/burger-serving.jpg");
     width: 100%;
     height: 500px;
     background-position: center;
@@ -209,7 +209,7 @@ header{
 }
 /*End menu*/
 #before-contact{
-    background-image: url("/images/burger-serving2.jpg");
+    background-image: url("images/burger-serving2.jpg");
     width: 100%;
     height: 500px;
     background-position: center;
